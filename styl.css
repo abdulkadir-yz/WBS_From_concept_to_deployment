@@ -1,6 +1,47 @@
-/* general start*/
+/* general properties */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
 
-/* general end*/
+body {
+    background-color: #e0e0e0;
+}
+
+/* header start*/
+header nav {
+    background-color: grey;
+    padding: 2rem;
+    padding-right: 4rem;
+    font-size: 18px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 1rem;
+}
+
+header nav ul li{
+    padding: 1rem;
+    background-color: white;
+}
+
+#nav-li1{
+    margin-right: auto;
+}
+
+#nav-li5{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+/* header end*/
+
 /* nav start*/
 
 /* nav end*/
@@ -8,24 +49,124 @@
 
 /* main end*/
 /* section1 start*/
+.section1 {
+    display: flex;         /* iki karti yan yana dizer */
+    gap: 20px;             /* kartlar arasi bosluk */
+    padding: 40px;
+    background-color: #c0c0c0;
+}
+.card {
+    flex: 1;               /* her kart esit genislik alir */
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; /* icerik yuktan asagi siralansın */
+    gap: 16px;
+}
+.card.card-right {
+    justify-content: center; /* icerik dikey ortala */
+    text-align: center;
+}
+.badge {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 12px;
+    width: fit-content;    /* badge sadece metin kadar genis olsun */
+}
 
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+.school {
+    font-size: 13px;
+    color: #888;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+}
 /* section1 end*/
-/* section2 start*/
 
+/* section2 start*/
+.section2 {
+    background-color: white;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.section2 p {
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #888;
+}
+
+.logo-row {
+    display: flex;          /* logolari yan yana diz */
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-box {
+    width: 100px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
 /* section2 end*/
+
 /* section3 start*/
+.section3 {
+    background-color: #b0b0b0;
+    padding: 40px;
+    text-align: center;
+}
+
+.section3‚ h2 {
+    margin-bottom: 20px;
+}
+
+.video-box {
+    width: 100%;
+    max-width: 700px;
+    height: 350px;           /* sabit yukseklik - video alani */
+    background-color: #d0d0d0;
+    border: 1px solid #bbb;
+    margin: 0 auto;          /* yatay ortala */
+}
 
 /* section3 end*/
 /* section4 start*/
 #section4{
     background: rgb(197, 196, 196);
 }
-h3{
+.section4-title{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 5vw;
     font-weight: 300;
 }
-p3{
+#section4 p3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vw;
 }
@@ -64,7 +205,49 @@ p3{
 /* section6 start*/
 
 /* section6 end*/
+
+
+
 /* footer start*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid red;*/
+    row-gap: 2.5rem;
+    padding: 8rem;
+}
 
+footer h3{
+    font-size: 2rem;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 2.5rem;
+}
+
+.navigation{
+    font-size: 1.5rem;
+}
+.navigation li{
+    font-weight: 300;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.social-media li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 4.5rem;
+    min-height: 4.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    background-color: lightgrey;
+    border-radius: 50%;
+}
 /* footer end*/
-
